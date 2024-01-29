@@ -89,7 +89,7 @@ with open("data/a.txt", 'r') as f:
 
 ### 1) 정의&#x20;
 
-* 객체(Object)를 기반으로 프로그램을 만드는 방법론이다.&#x20;
+* 객체(Object)를 기반으로 프로그램을 만드는 방법론이다**(객체 지향)**.&#x20;
 * **\[개념의 **<mark style="color:red;">**추상화**</mark>**(**<mark style="color:red;">**abstraction**</mark>**)]** 실제 세상을 표현하고 있는 여러 개념들을 프로그램 상에서 구현하기 위한 컨셉의 프로그래밍 패러다임(paradigm)&#x20;
 
 ### 2) 구성&#x20;
@@ -98,58 +98,62 @@ with open("data/a.txt", 'r') as f:
 * 클래스(Class) - 이러한 사물들이 공유하는 속성을 정의한 것  &#x20;
   * Class variable - Class를 기술하는 정보를 나타내는 변수
   * Class method - Class의 특징을 설명하는 기능
-* 기존 방식은 데이터(변수, variable)와 데이터를 처리하는 기능(함수, function)이 독립적이 었지만, OOP는 이를 하나의 개념(Class)로 묶어서 생각하기 때문에 그 객체가 처리되는 기능을 자연스럽게 정의할 수 있다.&#x20;
+
+※ 기존 방식은 데이터(변수, variable)와 데이터를 처리하는 기능(함수, function)이 독립적이 었지만, OOP는 이를 하나의 개념(Class)로 묶어서 생각하기 때문에 그 객체가 처리되는 기능을 자연스럽게 정의할 수 있다.&#x20;
 
 <figure><img src=".gitbook/assets/image (7).png" alt="" width="561"><figcaption><p><a href="https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20">https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20</a></p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
 
-### 3)   장점
+### 3) 장점
 
-* **\[생산성 향상]** - 클래스 구조를 잘 설계하면 라이브러리 형태로 재사용이 쉬워진다. &#x20;
-* **\[자연적인 모델링]** - 일상 생활에 존재하는 개념을 그대로 프로그램에 구현 가능하다.
-* **\[재사용성 증가]** - 클래스의 상속의 개념 때문에, 프로그래밍 자체의 재사용성이 극대화된다.
-* **\[유지/보수 용이성 증가]** - OOP를 이용하여 개발을 하게되면, 다른 기능을 수정하더라도 클래스가 서로 다르게 구현 되어 있어 다른 기능에 끼치는 영향이 매우 적어질 수 있다.&#x20;
+1. **\[생산성 향상]** - 클래스 구조를 잘 설계하면 라이브러리 형태로 '재사용'이 쉬워진다. &#x20;
+2. **\[자연적인 모델링]** - 일상 생활에 존재하는 개념을 있는그대로 프로그램에 구현 가능하다.
+3. **\[재사용성 증가]** - <mark style="color:red;">클래스의 '상속(inheritance)'</mark>개념덕에 프로그래밍 자체의 <mark style="color:red;">재사용성이 극대화</mark>된다.
+4. **\[**<mark style="color:red;">**유지/보수 용이성 증가**</mark>**]** - OOP를 이용하여 개발을 하게 되면, 다른 기능을 수정하더라도 클래스가 서로 다르게 구현 되어 있어 다른 기능에 끼치는 영향이 매우 적어질 수 있다.&#x20;
 
 
 
-1\) 상속(Inheritance)
+### 4) 특징&#x20;
+
+
+
+**(1) 상속(Inheritance)**
 
 <figure><img src=".gitbook/assets/image (2).png" alt="" width="563"><figcaption><p>Source : https://masterdotnet.com/csharptutorial/csharpinheritance/</p></figcaption></figure>
 
-클래스는 개념의 추상화(Abstracted Concept)이기에, 해당 개념을 계승하는 하위 개념을 만든다.&#x20;
-
-상속하는 클래스(Superclass) -&#x20;
-
-상속받는 클래스(Subclass) - superclass의 모든 개념을 이어받는 만큼, class variable, class method 도 이어받는다.&#x20;
+* 클래스는 개념의 추상화(Abstracted Concept)이므로, 해당 개념을 계승하는 하위 개념을 만든다.&#x20;
+  * 상속하는 클래스(Superclass) - 상위 개념&#x20;
+  * 상속받는 클래스(Subclass) - 하위 개념,  Superclass의 모든 개념을 이어받는 만큼, class variable 및 class method 도 이어받는다(그래서 다시 만들 필요가 없음.)
 
 
 
-2\) 다형성(polymorphism)
+**(2) 다형성(polymorphism)**
 
 <figure><img src=".gitbook/assets/image (3).png" alt="" width="563"><figcaption><p>Source : https://codegym.cc/groups/posts/polymorphism-in-java</p></figcaption></figure>
 
-여러 하위 클래스가 같은 class method를 상속받게 되면, 그 기능을 다르게 구현할 수 있습 니다. 예를 들어 Animal 이라는 Class에 Speak()이라는 method가 있다면, 이 기능은 다른 동물 을 표현하는 subclass들마다 다르게 구현될 수 있습니다. → Dog : “Woof” , Cat : “Meow” , Cow : “Moo”&#x20;
-
-* Polymorphism - 하나의 기능을 나타내는 개념을 실제 구현해서 다양한 형태로 표현 가능하게 된 것&#x20;
-* Method Overriding - 이러한 다형성을 구현할 수 있는 기능
-
-
-
-3\) 추상화(Abstraction)
-
-* Class 내부에 구현된 Class variable이나 Class method를 직접 보지 않아도 개념상으로 사용할 수 있게 하는 개념
-* 기능에 대한 명세나 변수의 의미만 확실하게 알면, 내부 구현은 살펴보지 않아도 됩니다.
+* 하나의 기능을 나타내는 개념을 실제 구현해서 다양한 형태로 표현을 가능케한다(via 'Method Overriding').
+* 여러 하위 클래스가 같은 class method를 상속받게 되면, 그 기능을 다르게 구현할 수 있다.&#x20;
+  * 예를 들어, Animal 이라는 Class에 Speak()이라는 method가 있다면, 이 기능은 다른 동물을 표현하는 subclass들마다 다르게 구현될 수 있습니다. e.g. Dog : “Woof” , Cat : “Meow” , Cow : “Moo”&#x20;
 
 
 
-4\) 은닉화(Encapsulation)
+**(3) 추상화(Abstraction)**
+
+* Class 내부에 구현된 Class variable이나 Class method를 직접 보지 않아도 이들을 개념상으로 사용할 수 있게 한다.
+* 기능에 대한 명세나 변수의 의미만 확실하게 알면, 내부 구현은 굳이 살펴보지 않아도 된다.&#x20;
+
+
+
+**(4)** [**은닉화(Encapsulation)**](#user-content-fn-5)[^5]
 
 <figure><img src=".gitbook/assets/image (4).png" alt="" width="444"><figcaption><p>Source : https://medium.com/javarevisited/why-should-encapsulation-to-be-used-e82a81f5c47c</p></figcaption></figure>
 
-* Class variable과 Class method까지 단일 개념으로 구성되어 있어, 사용자가 개념 구현의 혼선을 막고 심플하게 사용할 수 있게 만드는 특징&#x20;
+* Class variable과 Class method까지 단일 개념으로 구성되어 있어, 사용자가 개념 구현의 혼선을 막고 간단하게 사용할 수 있도록 한다.&#x20;
 * 성공적으로  작동하면 사용자는 Class의 내부 구현 코드를 보지 않아도 내부 데이터와 기능을 사용하는데 아무런 문제가 없다.&#x20;
-* 우리가 사용해왔던 모든 함수들, Data type들의 내부 구현 코드를 보지 않아도 개념적으로 이해하고 사용할 수 있는 이유이다. e.g. List.append()를 예로 들 수 있습니다.
+* 우리가 사용해왔던 모든 함수들, Data type들의 내부 구현 코드를 보지 않아도 개념적으로 이해하고 사용할 수 있는 이유이다. e.g. List.append()
+
+
 
 ## 12. 클래스 (Class)
 
@@ -157,12 +161,11 @@ with open("data/a.txt", 'r') as f:
 
 ### 1) 정의&#x20;
 
-OOP에서 구현하려는 개념을 추상화한 코드 템플릿.
+* OOP에서 구현하려는 개념을 추상화한 코드 템플릿.
 
-### 2) 기능&#x20;
+### 2) 특징
 
-* 구현하려는 개념을 객체(object)의 형태로 찍어낸다.&#x20;
-* 구현하려는 대상의 특성을 Class variable로, 대상이 수행해야 하는 일을 Class method로 구현한다.&#x20;
+* 구현하려는 개념을 객체(object)의 형태로 찍어내고, 구현하려는 대상의 특성을 Class variable로, 대상이 수행해야 하는 일을 Class method로 구현한다.&#x20;
 
 ```python
 # Python Class example
@@ -184,35 +187,28 @@ return tmp_weight
 >>> 75
 ```
 
-* Constructor(생성자)를 통해, 객체를 찍어내는 틀을 정의한다.
-* 생성자는 **init**() 함수를 이용하여 구현합니다.&#x20;
-* 구현되는 객체는 self 라는 자체 변수를 가집니다.&#x20;
-* self는 말 그대로 객체 자기 자신을 지칭 합니다. self 변수를 통해서 모든 객체는 자기 자신을 구분할 수 있습니다.&#x20;
-
-Class method도 self 변수를 이용하여 객체를 구분합니다.&#x20;
-
-self는 Class variable이기 때문에 하나의 Class내에서 통용됩니다.
+* **Constructor(생성자)**를 통해, 객체를 찍어내는 틀을 정의한다(= 붕어빵 주조틀). 생성자는 '`__init__()` 함수'를 이용하여 구현합니다.&#x20;
+* 구현되는 객체는 self 라는 자체 변수를 가집니다. self는 말 그대로 객체 자기 자신을 지칭합니다. self 변수를 통해서 모든 객체는 자기 자신을 구분할 수 있습니다.&#x20;
+* Class method도 self 변수를 이용하여 객체를 구분합니다. self는 Class variable이기 때문에 하나의 Class내에서 통용됩니다.
 
 
 
 ### 3) 유의 사항&#x20;
 
-* Class도 역시 재사용성을 고려하여 디자인되어야 합니다.&#x20;
-* Class로 구현할 때 제일 중요한 포인트는 “어떤 특성과 어떤 기능을 구현할 것인가" 입니다.
+* Class도 역시 재사용성을 고려하여 디자인되어야 한다.&#x20;
+* Class로 구현할 때 제일 중요한 포인트는 “<mark style="color:red;">어떤 특성과 어떤 기능을 구현할 것인가</mark>" 이다.
 
 
 
-ML/DL Project 실무에서의 활용.&#x20;
+### 4) 실무  활용 (ML/DL Project)&#x20;
 
-Tensorflow/Keras template
+* Tensorflow/Keras template
 
-[https://github.com/Husseinjd/keras-tensorflow-template](https://github.com/Husseinjd/keras-tensorflow-template)
+{% embed url="https://github.com/Husseinjd/keras-tensorflow-template" %}
 
-Pytorch template
+* Pytorch template
 
-[https://github.com/victoresque/pytorch-template](https://github.com/victoresque/pytorch-template)
-
-
+{% embed url="https://github.com/victoresque/pytorch-template" %}
 
 
 
@@ -229,3 +225,5 @@ Pytorch template
 [^3]: Standard Input / Standard Output
 
 [^4]: <mark style="color:red;">파이썬에서 키보드로 데이터를 입력하기 위해 필요한 함수</mark>
+
+[^5]: <mark style="color:red;">내부 구현을 몰라도 사용하기 용이</mark>하므로, 잘 만들어진 <mark style="color:red;">오픈소스 라이브러리를 쉽게 이용</mark>할 수 있다.&#x20;
