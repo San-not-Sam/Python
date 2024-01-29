@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Page](README.md)
+* [파이썬 프로그래밍](README.md)
