@@ -52,13 +52,13 @@ result = function1(3, 5)
 
 ### 1) 정의
 
-* I/O : Input/Output의 약자로 컴퓨터가 데이터를 입력받고 출력하는 모든 작업을 의미합니다.&#x20;
+* <mark style="color:red;">I</mark>/<mark style="color:green;">O</mark> : <mark style="color:red;">Input</mark>/<mark style="color:green;">Output</mark>의 약자로 컴퓨터가 데이터를 입력받고 출력하는 모든 작업을 의미합니다.&#x20;
 
 <figure><img src=".gitbook/assets/image.png" alt="" width="563"><figcaption><p>Source : https://en.wikiversity.org/wiki/Hardware#/media/File:Computer1.png</p></figcaption></figure>
 
-* `Input/output -` 프로그램 입장에서 들어오는 모든 데이터/나가는 모든 데이터
-* `I/O 처리 -` 메인 메모리 입장에서 생각하는 들어오고 나가는 모든 데이터(단, CPU와의 소통은 제외)
-* `stdin/stdout -` 사용자로부터 키보드로 입력받는 것/사용자에게 다시 결과를 모니터로 보여주는 것
+* `Input/output` - 프로그램 입장에서 들어오는 모든 데이터/나가는 모든 데이터
+* `I/O 처리` - 메인 메모리 입장에서 생각하는 들어오고 나가는 모든 데이터(단, CPU와의 소통은 제외)
+* `stdin/stdout` - 사용자로부터 키보드로 입력받는 것/사용자에게 다시 결과를 모니터로 보여주는 것
 
 ```python
 # stdin/stdout example 
@@ -69,8 +69,8 @@ print(a)
 >>> '5'
 ```
 
-4. 프로그램은 메인 메모리 상에서 존재하기 때문에, 스토리지로부터 파일을 불러오는 것도 input이고, 프로그램의 결과를 스토리지에 저장하는 것도 output입니다.
-5. `file I/O -` 스토리지와 프로그램 사이의 I/O
+4. `file I/O` - 스토리지와 프로그램 사이의 I/O
+5. 프로그램은 메인 메모리 상에서 존재하기 때문에, 스토리지로부터 파일을 불러오는 것도 `input`이고, 프로그램의 결과를 스토리지에 저장하는 것도 `output`입니다.
 
 ```python
 # filein/fileout example
@@ -78,47 +78,50 @@ with open("data/a.txt", 'r') as f:
   data = f.readlines()
 ```
 
-6. 파이썬에서는 with open() 함수를 통해서 텍스트 파일을 쉽게 불러올 수 있습니다. )&#x20;
+6. 파이썬에서는 with open() 함수를 통해서 텍스트 파일을 쉽게 불러올 수 있습니다.&#x20;
 7. ‘r’, ‘w’, ‘a’ 등의 mode를 바꿔서 파일을 다른 옵션으로 열 수 있다. (read, write, append 순
-8. 다른 타입의 파일을 열기 위해선 다른 라이브러리들이 필요합니다.&#x20;
-   * e.g. csv, excel 파일을 열기 위해 pandas, csv, openpyxl 라이브러리를 사용할 수 있다.
-   * e.g. png, jpg 파일을 열기 위해 PIL, opencv 라이브러리를 사용할 수 있다.&#x20;
-   * e.g. pk, pkl 파일을 열기 위해 pickle 라이브러리를 사용할 수 있다. (파일 타입이 binary라서, ‘rb’를 써야함)&#x20;
+8. 다른 타입의 파일을 열기 위해선 다른 라이브러리들이 필요하다.
+   * `pandas, csv, openpyxl` - csv, excel 파일을 열기 위해 를 사용할 수 있다.
+   * `PIL, opencv` - png, jpg 파일을 열기 위해 를 사용할 수 있다.&#x20;
+   * &#x20;`pickle` - pk, pkl 파일을 열기 위해사용할 수 있다. (파일 타입이 binary라서, ‘rb’를 써야함)&#x20;
 9. I/O가 데이터 처리를 할 때 가장 느린 파트이기 때문에 신경써줘야 합니다. (performance bottleneck)
 
 ## 11. OOP
 
 정의&#x20;
 
-Object-Oriented Programming의 약자로 객체(Object)를 기반으로 프로그 램을 만드는 방법론입니다.
+### 1) 정의&#x20;
+
+* Object-Oriented Programming의 약자로 객체(Object)를 기반으로 프로그램을 만드는 방법론입니다.
+* 실제 세상을 표현하고 있는, 여러가지 개념들을 프로그램으로 옮겨서 구현할 수 있 기 위한 컨셉의 프로그래밍 패러다임(paradigm)입니다.  → 개념의 추상화(abstraction)
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
 
-실제 세상을 표현하고 있는, 여러가지 개념들을 프로그램으로 옮겨서 구현할 수 있 기 위한 컨셉의 프로그래밍 패러다임(paradigm)입니다. → 개념의 추상화(abstraction)
 
-객체(object)라는 개념은 실제 사물 하나하나를 의미할 수 있고, 이러한 사물들이 공유하는 속성을 정의한 것을 클래스(Class)라고 합니다.&#x20;
+
+### 2) 구성&#x20;
+
+* 객체(Object) - 실제 사물 하나하나를 의미할 수 있고,&#x20;
+* 클래스(Class) - 이러한 사물들이 공유하는 속성을 정의한 것  &#x20;
+  * Class variable - Class를 기술하는 정보를 나타내는 변수
+  * Class method - Class의 특징을 설명하는 기능
 
 기존 방식은 데이터(변수, variable)와 데이터를 처리하는 기능(함수, function)이 독립적이 었지만, OOP는 이를 하나의 개념(Class)로 묶어서 생각하기 때문에 그 객체가 처리되는 기능을 자연스럽게 정의할 수 있습니다.&#x20;
-
-Class에는 Class를 기술하는 정보를 나타내는 변수인 Class variable 과 Class의 특징을 설명하는 기능인 Class method 를 포함합니다.&#x20;
 
 추상적인 개념 Class를 실제로 사용하려면 하나 하나의 개별 사물로 만들어야 하는데, 이를 개별 사물인 객체(object)라고 합니다. → 개념의 구체화(instantiation)
 
 
 
-장점
+### 장점
 
-클래스 구조를 잘 설계하면 라이브러리 형태로 재사용이 쉬워진다. → 생산성 향상&#x20;
-
-2\. 일상 생활에 존재하는 개념을 그대로 프로그램에 구현 가능하다. → 자연적인 모델링&#x20;
-
-3\. 클래스의 상속의 개념 때문에, 프로그래밍 자체의 재사용성이 극대화된다. → 재사용성 증가&#x20;
-
-4\. OOP를 이용하여 개발을 하게되면, 다른 기능을 수정하더라도 클래스가 서로 다르게 구현 되어 있어 다른 기능에 끼치는 영향이 매우 적어질 수 있다. → 유지보수 용이성 증가
+* \[생산성 향상] - 클래스 구조를 잘 설계하면 라이브러리 형태로 재사용이 쉬워진다. &#x20;
+* \[자연적인 모델링] - 일상 생활에 존재하는 개념을 그대로 프로그램에 구현 가능하다.
+* \[재사용성 증가] - 클래스의 상속의 개념 때문에, 프로그래밍 자체의 재사용성이 극대화된다.
+* \[유지/보수 용이성 증가] - OOP를 이용하여 개발을 하게되면, 다른 기능을 수정하더라도 클래스가 서로 다르게 구현 되어 있어 다른 기능에 끼치는 영향이 매우 적어질 수 있다.&#x20;
 
 
 
-### 1) Inheritance(상속)
+### 1) 상속(Inheritance)
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>Source : https://masterdotnet.com/csharptutorial/csharpinheritance/</p></figcaption></figure>
 
@@ -128,7 +131,7 @@ Class에는 Class를 기술하는 정보를 나타내는 변수인 Class variabl
 
 subclass는 superclass의 모든 개념을 이어받기 때문에, class variable, class method 도 그대로 이어받습니다.
 
-### 2) polymorphism(다형성)
+### 2) 다형성(polymorphism)
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Source : https://codegym.cc/groups/posts/polymorphism-in-java</p></figcaption></figure>
 
@@ -142,7 +145,7 @@ subclass는 superclass의 모든 개념을 이어받기 때문에, class variabl
 
 
 
-### 3) Abstraction(추상화)
+### 3) 추상화(Abstraction)
 
 Abstraction(추상화)는 Class 내부에 구현된 Class variable이나 Class method를 직접 보지 않아도 개념상으로 사용할 수 있게 하는 개념입니다.&#x20;
 
@@ -150,9 +153,7 @@ Abstraction(추상화)는 Class 내부에 구현된 Class variable이나 Class m
 
 
 
-
-
-### 4) Encapsulation(은닉화)
+### 4) 은닉화(Encapsulation)
 
 <figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>Source : https://medium.com/javarevisited/why-should-encapsulation-to-be-used-e82a81f5c47c</p></figcaption></figure>
 
