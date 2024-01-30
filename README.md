@@ -63,7 +63,7 @@ layout:
   4. 한 줄 단위(line by line) 실행이 가능하다.
   5. PyPI 덕에 **굉장히 많은 오픈소스 라이브러리를 가지고 있다는 확장성이 큰 특징이다.** 이 곳에 특정 기능 구현을 위한 다양한 코드들이 공유되어 있다.
 
-## 2. 데이터 유형
+## 2. 데이터 유형 (Data Type)
 
 ### 1) 정의와 특징&#x20;
 
@@ -200,7 +200,7 @@ result = function1(3, 5)
 
 * <mark style="color:red;">I</mark>/<mark style="color:green;">O</mark> : <mark style="color:red;">Input</mark>/<mark style="color:green;">Output</mark>의 약자로 컴퓨터가 데이터를 입력받고 출력하는 모든 작업을 의미합니다.&#x20;
 
-<figure><img src=".gitbook/assets/image.png" alt="" width="563"><figcaption><p>Source : https://en.wikiversity.org/wiki/Hardware#/media/File:Computer1.png</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt="" width="563"><figcaption><p>Source : https://en.wikiversity.org/wiki/Hardware#/media/File:Computer1.png</p></figcaption></figure>
 
 * `Input/output` - 프로그램 입장에서 들어오는 모든 데이터/나가는 모든 데이터
 * `I/O 처리` - 메인 메모리 입장에서 생각하는 들어오고 나가는 모든 데이터(단, CPU와의 소통은 제외)
@@ -251,7 +251,7 @@ with open("data/a.txt", 'r') as f:
 
 <figure><img src=".gitbook/assets/image (7).png" alt="" width="561"><figcaption><p><a href="https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20">https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20</a></p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
 
 ### 3) 장점
 
@@ -268,7 +268,7 @@ with open("data/a.txt", 'r') as f:
 
 **(1) 상속(Inheritance)**
 
-<figure><img src=".gitbook/assets/image (2).png" alt="" width="563"><figcaption><p>Source : https://masterdotnet.com/csharptutorial/csharpinheritance/</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption><p>Source : https://masterdotnet.com/csharptutorial/csharpinheritance/</p></figcaption></figure>
 
 * 클래스는 개념의 추상화(Abstracted Concept)이므로, 해당 개념을 계승하는 하위 개념을 만든다.&#x20;
   * 상속하는 클래스(Superclass) - 상위 개념&#x20;
