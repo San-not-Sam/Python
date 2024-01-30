@@ -154,11 +154,9 @@ df.head()
 
 ### 1) 정의
 
-* Exploratory Data Analysis의 준말로,  데이터에서 분석에 필요한 여러가지 통계량을 계산하고, 시각화를 통해서 이를 확인하는 작업.
+* Exploratory Data Analysis의 준말로,  데이터에서 분석에 필요한 여러 통계량을 계산하고, 시각화로이를 확인하는 작업.
 
 <figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p>Chapter.03_탐색적_데이터_분석-01. 탐색적 데이터 분석이란</p></figcaption></figure>
-
-
 
 ### 2) RECAP
 
@@ -167,10 +165,16 @@ df.head()
 * 어떤 데이터를 사용하느냐에 따라서도 천차만별로 달라진다. &#x20;
 * Data Scientist로서의 역량은 나만의 EDA process를 구축하는 데에 있다.&#x20;
 
-
-
 ### 3) 고려 사항
 
 * **\[분석의 목표]** 해당 데이터를 보고 어떤 인사이트를 이끌어내고 싶은가?
 * **\[분석 방법론]** 데이터의 여러 특성을 어떻게 파악하는가?&#x20;
 * **\[분석을 위 한 프로그래밍]** 지금까지 배운 오픈소스 라이브러리들로 EDA를 어떻게 수행하는가?&#x20;
+
+### 3) Hands-on
+
+{% embed url="https://www.kaggle.com/ihormuliar/starbucks-customer-data" %}
+
+{% embed url="https://www.kaggle.com/c/kaggle-survey-2021/data" %}
+
+{% embed url="https://www.data.go.kr/data/15083033/fileData.do" %}
