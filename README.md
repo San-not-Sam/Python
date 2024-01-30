@@ -89,7 +89,7 @@ layout:
 
 (7) **dict** : key-value store 방식으로 자료를 저장하는 구조이며, mapping이라고도 한다.
 
-## 3. If 조건문
+## 3. 조건문 (If)
 
 ### 1) 정의
 
@@ -121,7 +121,7 @@ else:
 * 조건에서 빠지는 것들이 없는지 항상 체크합니다. 보통 edge case에서 에러가 자주 난다. &#x20;
 * \[boundary condition] 가장 쉬운 예시로 list의 처음과 끝의 원소를 indexing하는 경우이다.
 
-## 4. For, While 반복문&#x20;
+## 4. 반복문 (For, While)
 
 ### 1) 정의
 
