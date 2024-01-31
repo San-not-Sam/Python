@@ -14,7 +14,7 @@ layout:
 
 # \[개념] 파이썬 라이브러리
 
-## # 라이브러리(Library)
+## # Library
 
 ### 1) 정의&#x20;
 
@@ -29,7 +29,7 @@ layout:
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p><a href="https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385">https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385</a></p></figcaption></figure>
 
-## 1.넘파이(Numpy)
+## 1-1. Numpy
 
 ### 1) 정의
 
@@ -61,7 +61,7 @@ print(np.linalg.norm(arr)) # print L2 norm of vector (1, 2, 3)
 * numpy는 벡터 연산을 빠르게 처리하는 데에 최적화되어 있으며, 파이썬 리스트로 구현할 때 보다 빠르다.
 * 데이터의 형태는 텍스트, 오디오, 이미지 등 가지각색 다양한 형태로 존재하는데, 이에 대한 해석은 컴퓨터의 연산 작업 구조상 형태와 관계없이 배열 단위의 형태로 이뤄진다. 넘파이는데이터 분석시 파이썬을 통해 모든 형태의 데이터를 분석하기 위해 사용된다.
 
-## 2. 넘파이 배열(Numpy Array)&#x20;
+## 1-2. Numpy Array&#x20;
 
 ### 1) 정의
 
@@ -114,7 +114,7 @@ numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조�
 
 
 
-## 3. 판다스(Pandas)
+## 2-1. Pandas
 
 ### 1) 정의
 
@@ -149,7 +149,7 @@ df.head()
 * 웹 크롤링&#x20;
 * 시각화&#x20;
 
-## 4. 판다스 DF (Pandas DataFrame)
+## 2-2. Pandas DF (DataFrame)
 
 ### 1) 정의
 
@@ -166,7 +166,7 @@ df.head()
 * 하나의 column을 기준으로 모든 원소의 data type이 동일하다(모든 numpy array가 가지는 data type과 동일).
 * numpy array를 상위 호환하는 개념으로서, 내부 구현체로 numpy array를 사용하기에universal function을 사용할 수 있다.&#x20;
 
-## 5. Matplotlib & Seaborn
+## 3. Matplotlib & Seaborn
 
 ### 1) Matplotlib 정의와 특징&#x20;
 
@@ -178,13 +178,13 @@ df.head()
 * `figure` 라는 도화지에 여러 component를 얹어서 그래프를 완성하는 컨셉으로 구현된다.
 * 구현하는 방법은 크게 `pyplot` 와 `OOP-style`가 있다. 신속하되 적당한 퀄리티의 그래프를 원하면 전자를, 디테일한 표현이 담긴 그래프를 원하면 후자를 추천한다.&#x20;
 
-### 1) Matplotlib 데이터 타입에 따른 그래프 시각화
+### 2) Matplotlib 데이터 타입에 따른 그래프 시각화
 
 <table><thead><tr><th width="151">데이터 유형</th><th width="300">예시 데이터 </th><th width="193">그래프 종류 </th></tr></thead><tbody><tr><td>연속형 데이터</td><td><ul><li><p>연속형 데이터 간 </p><ul><li>상관관계</li><li>변화량</li></ul></li></ul></td><td><ul><li>산점도(Scatter)</li><li>밀도(Density) </li></ul></td></tr><tr><td>범주형 데이터</td><td><ul><li><p>항목 또는 그룹 간 </p><ul><li>비교, 비율, 순위형 자료</li></ul></li></ul></td><td><p></p><ul><li>박스(Box)</li><li>바(Bar)</li><li>파이(Pie)</li><li>히트맵(Heat map)</li></ul></td></tr><tr><td>시계열 데이터</td><td><ul><li><p> 시간 단위 데이터의 경향성, 흐름 </p><ul><li>e.g. 날짜, 요일 등</li></ul></li></ul></td><td><p></p><ul><li>라인(Line)</li><li>리본(Ribbon)</li><li>VEB 그래프</li></ul></td></tr></tbody></table>
 
 <figure><img src=".gitbook/assets/image (16).png" alt="" width="563"><figcaption><p>Source: https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage- py</p></figcaption></figure>
 
-### 2) Seaborn 정의와 특징
+### 3) Seaborn 정의와 특징
 
 * Statistical Data Visualization library based on matplotlib
 * Matplotlib을 더 편하게 사용할 수 있도록 만든 라이브러리이다.&#x20;
@@ -192,8 +192,23 @@ df.head()
 * 특히, DataFrame을 직접적으로 지원하기 때문에 훨씬 편리하게 데이터를 시각화할 수 있다.&#x20;
 * 그리고 Matplotlib 위에 만들어져서, Matplotlib에 있는 개념들을 확장해서 사용할 수 있다.&#x20;
 * 다양한 기본 plot들이 있어서 통계 분석을 빠르게 수행할 수 있다. → **EDA**
+* **통계 데이터 시각화에 최적화된 라이브러리로서, 매력적이고 유익한 통계 그래픽을 위한 높은 수준의 인터페이스를 자랑한다.**&#x20;
+* 보통 Matplotlib와 함께 사용한다.&#x20;
 
-### 3) 기본 plots
+### 4) Seaborn 장점&#x20;
+
+* 통계 지원 기능이 제공된다.&#x20;
+* 다양한 색조의 팔레팅(various hues)이 지원된다.&#x20;
+* Pandas 데이터 프레임과 호환성이 높다. &#x20;
+* Matplotlib 그래프와 호환성이 높다.&#x20;
+
+### 5) 비교 (Matplotlib vs. Seaborn)
+
+<table><thead><tr><th width="111">특징</th><th width="345" align="center">Matplotlib</th><th align="center">Seaborn</th></tr></thead><tbody><tr><td>용도 </td><td align="center">Pandas 및 Numpy를 활용한 다양한 플롯팅 </td><td align="center">Matplotlib와 용도가 동일한 확장판 </td></tr><tr><td>문법</td><td align="center">커스터마이징에서 코드가 길어질 만큼 복잡</td><td align="center">학습과 이해가 용이할만큼 간단</td></tr><tr><td>다중 figure</td><td align="center">일일이 옵션을 설정해야 한다.</td><td align="center">자동 생성 기능이 있다.</td></tr><tr><td>유연성</td><td align="center">커스터마이징을 허용할 만큼 유연성이 높다.</td><td align="center">자체 제공 테마 外 유연성이 낮다. </td></tr></tbody></table>
+
+
+
+### 6) 기본 plots
 
 * Lineplot
 
@@ -211,9 +226,25 @@ df.head()
 
 {% embed url="https://seaborn.pydata.org/examples/scatterplot_matrix.html" %}
 
+## 4. Folium
+
+### 1) 정의와 특징
+
+* 지도 시각화로 으뜸이 되는 패키지
+* 점(dot)과 선(line) 등 여러 방식으로 지도 표현이 가능
+* 시각화 결과를 html로 저장할 수 있기에, 타인과의 공유가 원활하다.
+* Pandas와의 호환성이 높다.&#x20;
+* 간단한 지리 정보 특징을 표현하기 위한 표준 지도인 JSON 포맷을 기본 자료형으로 사용한다.&#x20;
+
+### 2) 대표적 기능
+
+* Interactive 지도
+* 시계열 지도 변화 분석
+* 히트맵(Heatmap)&#x20;
 
 
-## 6. 탐색적 데이터 분석 (EDA)&#x20;
+
+## 5. 탐색적 데이터 분석 (EDA)&#x20;
 
 ### 1) 정의
 
