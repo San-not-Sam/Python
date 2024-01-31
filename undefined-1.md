@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# 파이썬 데이터 분석 라이브러리
+# \[개념] 파이썬 라이브러리
 
 ## # 라이브러리(Library)
 
@@ -27,12 +27,14 @@ layout:
 * 내장되어 있지 않은 라이브러리는 `!pip install '라이브러리 이름'`으로 설치가 가능하다.
 * **\[용어 정리]**  모듈(Module) -   파이썬 확장자(.py)로 구성되어 실행이 가능한 하나의 파일로, '함수(function)', '클래스(class)', '변수(variable)'로 구성된다.&#x20;
 
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p><a href="https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385">https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385</a></p></figcaption></figure>
+
 ## 1.넘파이(Numpy)
 
 ### 1) 정의
 
 * 동일한 타입의 데이터가 나열되어 있는 집합으로, 벡터 및 수치 연산에 최적화된 라이브러리이다(Numerical computing with Python).&#x20;
-* ㄴㅇㄴㅇㄴㅇㄴㅇ 다차원 배열을 쉽고 빠르게 계산하는  파이썬의 대표 라이브러리이다.&#x20;
+* 다차원 배열을 쉽고 빠르게 계산하는  파이썬의 대표 라이브러리이다.&#x20;
 * 데이터 분석시, 주로  Pandas와 연계되어 사용된다.
 
 <figure><img src=".gitbook/assets/image (19).png" alt="" width="563"><figcaption><p><a href="https://medium.com/byte-sized-code/common-placeholders-in-numpy-arrays-1c3673718f2f">https://medium.com/byte-sized-code/common-placeholders-in-numpy-arrays-1c3673718f2f</a></p></figcaption></figure>
@@ -65,7 +67,7 @@ print(np.linalg.norm(arr)) # print L2 norm of vector (1, 2, 3)
 
 numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조와 동일한 개념이다.&#x20;
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Source : https://indianaiproduction.com/python-numpy-array/</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Source : https://indianaiproduction.com/python-numpy-array/</p></figcaption></figure>
 
 ### 2) List와의 공통점&#x20;
 
@@ -78,12 +80,39 @@ numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조�
 2. **\[homogeneous array]** 모든 원소의 데이터 타입이 동일해야 합니다.&#x20;
 3. 제공하는 데이터 타입이 다르다. 다중 리스트 구조와 달리, 넘파이 배열은 동일한 데이터 타입으로 구성된다.&#x20;
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. 수치와 관련된 데이터 타입이 대부분입니다.
 5. 원소의 크기(memory size)를 조절할 수 있으며, 크기에 따라 표현할 수 있는 수치 범위가 정해집니다.&#x20;
 
 <table><thead><tr><th width="125"></th><th width="177"></th><th width="188"></th><th width="153"></th><th></th></tr></thead><tbody><tr><td>np.int8</td><td>수치 표현에 8 bits를 사용한다</td><td>00000000 ~ 11111111</td><td>2^8 (256개)</td><td>-128 ~ 127</td></tr><tr><td>np.float32</td><td>실수 표현에 32 bits를 사용한다</td><td>exponent, mantissa, sign</td><td>single precision</td><td></td></tr></tbody></table>
+
+### <mark style="color:orange;">4) 배열 데이터 슬라이싱과 정렬</mark>&#x20;
+
+1. 배열 생성하기&#x20;
+2. 슬라이싱
+3. Fancy 인덱싱
+4. Boolean 인덱싱
+5. 유용한 Numpy 함수&#x20;
+6. 배열 차원 변환&#x20;
+7. 정렬
+
+### 5) 행렬(matrix) 연산과 성능&#x20;
+
+1. 정의
+2. 기본 연산
+   1. 덧셈 & 뺄셈
+   2. 곱셈 & 나눗셈&#x20;
+3. 행렬 집계 함수
+   1. 합계
+   2. 최대
+   3. 최소
+   4. 평균
+   5. <mark style="color:orange;">표준편차</mark>
+4. <mark style="color:orange;">Broadcasting 연산</mark>
+5.
+
+
 
 ## 3. 판다스(Pandas)
 
@@ -95,6 +124,9 @@ numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조�
 
 * 정형 데이터를 효율적으로 표현하는 DataFrame 형태로 모든 데이터를 표현한다.&#x20;
 * Numpy와 마찬가지로, 벡터 연산에 최적화되어있다.&#x20;
+* 표 형태의 데이터(행렬) 조작에 특화되어 있다.&#x20;
+* 대용량 데이터 셋을 이용한 여러 통계 처리 기능을 제공한다.
+* 엑셀의 거의 모든 기능과 SQL과 같은 DB문도 구현한다(호환).&#x20;
 
 ```
 # pandas example
@@ -110,7 +142,12 @@ df.head()
 * 다양한 정형 데이터를 통합 관리할 수 있다. json, html, csv, xlsx, hdf5, sql, ... 모 두 DataFrame으로 통일해서 표현될 수 있다.&#x20;
 * 엑셀에서 제공하는 거의 모든 연산 기능을 제공할 정도로,  편의성이 좋다.
 
+### 4) 활용
 
+* 엑셀 전처리작업
+* SQL  DB 작업
+* 웹 크롤링&#x20;
+* 시각화&#x20;
 
 ## 4. 판다스 DF (Pandas DataFrame)
 
@@ -133,11 +170,27 @@ df.head()
 
 ### 1) Matplotlib 정의와 특징&#x20;
 
-* 파이썬 오픈소스 라이브러리 中 가장 널리 사용되는 시각화 라이브러리이다.&#x20;
+* 합성어(**Mat**h + **Plot** + **Lib**rary)로, 파이썬 오픈소스 라이브러리 中 가장 널리 사용되는 표준시각화 라이브러리이다.&#x20;
 * MATLAB의 기능들을 파이썬으로 가져오는 컨셉으로 시작되었다.&#x20;
 * 각종 논문에서 figure를 그릴 때, 사용될 만큼 깔끔하게 그래프를 그려주는 것으로 유명하다.&#x20;
+* 거의 모든 그래프 형태를 표현할 수 있으며, 세부 옵션 조정을 통해 커스터마이징이 가능하다.&#x20;
+* Numpy 및 Pandas와의 연동성이 높다.&#x20;
 * `figure` 라는 도화지에 여러 component를 얹어서 그래프를 완성하는 컨셉으로 구현된다.
 * 구현하는 방법은 크게 `pyplot` 와 `OOP-style`가 있다. 신속하되 적당한 퀄리티의 그래프를 원하면 전자를, 디테일한 표현이 담긴 그래프를 원하면 후자를 추천한다.&#x20;
+
+### 1) Matplotlib 데이터 타입에 따른 그래프 시각화&#x20;
+
+* 연속형 데이터
+* 범주형 데이터
+* 시계열 데이터&#x20;
+
+
+
+| 데이터 유형                                       | 그래프 종류  |   |
+| -------------------------------------------- | ------- | - |
+| <ol><li>연속형 데이터 간 상관관계</li><li>변화량</li></ol> |         |   |
+|                                              |         |   |
+|                                              |         |   |
 
 <figure><img src=".gitbook/assets/image (16).png" alt="" width="563"><figcaption><p>Source: https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage- py</p></figcaption></figure>
 

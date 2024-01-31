@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# 개념\_파이썬 프로그래밍
+# \[개념] 파이썬 프로그래밍
 
 ## 1. Python 프로그래밍
 
@@ -251,7 +251,7 @@ with open("data/a.txt", 'r') as f:
 
 <figure><img src=".gitbook/assets/image (7).png" alt="" width="561"><figcaption><p><a href="https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20">https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20</a></p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
 
 ### 3) 장점
 
