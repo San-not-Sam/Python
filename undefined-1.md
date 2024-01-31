@@ -178,19 +178,9 @@ df.head()
 * `figure` 라는 도화지에 여러 component를 얹어서 그래프를 완성하는 컨셉으로 구현된다.
 * 구현하는 방법은 크게 `pyplot` 와 `OOP-style`가 있다. 신속하되 적당한 퀄리티의 그래프를 원하면 전자를, 디테일한 표현이 담긴 그래프를 원하면 후자를 추천한다.&#x20;
 
-### 1) Matplotlib 데이터 타입에 따른 그래프 시각화&#x20;
+### 1) Matplotlib 데이터 타입에 따른 그래프 시각화
 
-* 연속형 데이터
-* 범주형 데이터
-* 시계열 데이터&#x20;
-
-
-
-| 데이터 유형                                       | 그래프 종류  |   |
-| -------------------------------------------- | ------- | - |
-| <ol><li>연속형 데이터 간 상관관계</li><li>변화량</li></ol> |         |   |
-|                                              |         |   |
-|                                              |         |   |
+<table><thead><tr><th width="151">데이터 유형</th><th width="300">예시 데이터 </th><th width="193">그래프 종류 </th></tr></thead><tbody><tr><td>연속형 데이터</td><td><ul><li><p>연속형 데이터 간 </p><ul><li>상관관계</li><li>변화량</li></ul></li></ul></td><td><ul><li>산점도(Scatter)</li><li>밀도(Density) </li></ul></td></tr><tr><td>범주형 데이터</td><td><ul><li><p>항목 또는 그룹 간 </p><ul><li>비교, 비율, 순위형 자료</li></ul></li></ul></td><td><p></p><ul><li>박스(Box)</li><li>바(Bar)</li><li>파이(Pie)</li><li>히트맵(Heat map)</li></ul></td></tr><tr><td>시계열 데이터</td><td><ul><li><p> 시간 단위 데이터의 경향성, 흐름 </p><ul><li>e.g. 날짜, 요일 등</li></ul></li></ul></td><td><p></p><ul><li>라인(Line)</li><li>리본(Ribbon)</li><li>VEB 그래프</li></ul></td></tr></tbody></table>
 
 <figure><img src=".gitbook/assets/image (16).png" alt="" width="563"><figcaption><p>Source: https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage- py</p></figcaption></figure>
 
