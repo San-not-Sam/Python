@@ -190,7 +190,7 @@ result = function1(3, 5)
 
 ### 3) 사용 이유 &#x20;
 
-* 코드를 구조화하기 쉽습니다!&#x20;
+* &#x20;동일 구조의 코드 반복을 피할 수 있다. (코드를 구조화하기 쉽습니다!)
 * [<mark style="color:red;">가독성</mark>](#user-content-fn-2)[^2]<mark style="color:red;">이 높고, 유지/보수가 편하다.</mark>&#x20;
 * 구조화된 코드는 코드의 재사용성(Reusability) 즉,  <mark style="color:red;">코드의 생산성이 향상</mark>됩니다.&#x20;
 
@@ -200,7 +200,7 @@ result = function1(3, 5)
 
 * <mark style="color:red;">I</mark>/<mark style="color:green;">O</mark> : <mark style="color:red;">Input</mark>/<mark style="color:green;">Output</mark>의 약자로 컴퓨터가 데이터를 입력받고 출력하는 모든 작업을 의미합니다.&#x20;
 
-<figure><img src=".gitbook/assets/image (2).png" alt="" width="563"><figcaption><p>Source : https://en.wikiversity.org/wiki/Hardware#/media/File:Computer1.png</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption><p>Source : https://en.wikiversity.org/wiki/Hardware#/media/File:Computer1.png</p></figcaption></figure>
 
 * `Input/output` - 프로그램 입장에서 들어오는 모든 데이터/나가는 모든 데이터
 * `I/O 처리` - 메인 메모리 입장에서 생각하는 들어오고 나가는 모든 데이터(단, CPU와의 소통은 제외)
@@ -251,7 +251,7 @@ with open("data/a.txt", 'r') as f:
 
 <figure><img src=".gitbook/assets/image (7).png" alt="" width="561"><figcaption><p><a href="https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20">https://medium.com/analytics-vidhya/a-touch-of-class-understanding-oop-in-python-88c75afd9c20</a></p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Source : https://velog.io/@gil0127/Object-Oriented-Programming-in-Javascript</p></figcaption></figure>
 
 ### 3) 장점
 
@@ -268,7 +268,7 @@ with open("data/a.txt", 'r') as f:
 
 **(1) 상속(Inheritance)**
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt="" width="563"><figcaption><p>Source : https://masterdotnet.com/csharptutorial/csharpinheritance/</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt="" width="563"><figcaption><p>Source : https://masterdotnet.com/csharptutorial/csharpinheritance/</p></figcaption></figure>
 
 * 클래스는 개념의 추상화(Abstracted Concept)이므로, 해당 개념을 계승하는 하위 개념을 만든다.&#x20;
   * 상속하는 클래스(Superclass) - 상위 개념&#x20;

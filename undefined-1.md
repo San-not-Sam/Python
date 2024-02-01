@@ -27,7 +27,7 @@ layout:
 * 내장되어 있지 않은 라이브러리는 `!pip install '라이브러리 이름'`으로 설치가 가능하다.
 * **\[용어 정리]**  모듈(Module) -   파이썬 확장자(.py)로 구성되어 실행이 가능한 하나의 파일로, '함수(function)', '클래스(class)', '변수(variable)'로 구성된다.&#x20;
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p><a href="https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385">https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385</a></p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p><a href="https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385">https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385</a></p></figcaption></figure>
 
 ## 1-1. Numpy
 
@@ -67,7 +67,7 @@ print(np.linalg.norm(arr)) # print L2 norm of vector (1, 2, 3)
 
 numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조와 동일한 개념이다.&#x20;
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Source : https://indianaiproduction.com/python-numpy-array/</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Source : https://indianaiproduction.com/python-numpy-array/</p></figcaption></figure>
 
 ### 2) List와의 공통점&#x20;
 
@@ -80,7 +80,7 @@ numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조�
 2. **\[homogeneous array]** 모든 원소의 데이터 타입이 동일해야 합니다.&#x20;
 3. 제공하는 데이터 타입이 다르다. 다중 리스트 구조와 달리, 넘파이 배열은 동일한 데이터 타입으로 구성된다.&#x20;
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. 수치와 관련된 데이터 타입이 대부분입니다.
 5. 원소의 크기(memory size)를 조절할 수 있으며, 크기에 따라 표현할 수 있는 수치 범위가 정해집니다.&#x20;
