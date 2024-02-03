@@ -1,7 +1,13 @@
 # Table of contents
 
 * [\[개념\] 파이썬 프로그래밍](README.md)
-  * [\[실습\] 함수](undefined/undefined.md)
+  * [Data Types](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/HvBkoEtU90dxLFmJbPHk/)
+  * [If 조건문](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/Ro6cj42Y9Qsn075VFZSf/)
+  * [While, For 반복문](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/54hIQRYuORTOy06o0CBR/)
+  * [함수](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/U1yv4FYWwWDFVXp0Xo1A/)
+  * [I/O (Input / Output)](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/UsLN3j4fPFwwp0n2OPPu/)
+  * [Class](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/7dcM4DCVMsx8rmNtv9wW/)
 * [\[개념\] 파이썬 라이브러리](undefined-1.md)
 * [\[실습\] 파이썬 데이터 전처리(Pandas)](pandas.md)
 * [\[실습\] 파이썬 데이터 시각화 (Matplotlib, Seaborn, Folium)](matplotlib-seaborn-folium.md)
+* [\[실습\] 함수](undefined-2.md)
