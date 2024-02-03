@@ -2,6 +2,7 @@
 
 * [\[개념\] 파이썬 프로그래밍](README.md)
   * [Data Types](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/HvBkoEtU90dxLFmJbPHk/)
+  * [Copy of Data Types](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/HvBkoEtU90dxLFmJbPHk/)
   * [If 조건문](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/Ro6cj42Y9Qsn075VFZSf/)
   * [While, For 반복문](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/54hIQRYuORTOy06o0CBR/)
   * [함수](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/U1yv4FYWwWDFVXp0Xo1A/)
