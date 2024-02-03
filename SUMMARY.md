@@ -8,6 +8,7 @@
   * [I/O (Input / Output)](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/UsLN3j4fPFwwp0n2OPPu/)
   * [Class](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/7dcM4DCVMsx8rmNtv9wW/)
   * [\[실습\] 함수 \* 이렇게 바로가기 없이 독자적인 파일이 있어야 함. 위 서브 파일들 내용을 복붙해서 독자 파일로 만들 것!](undefined/untitled.md)
+  * [이렇게 독자적으로 만들고 삽입했을 때, 클릭시 '내용 확인'이 가능한가?](undefined/undefined.md)
 * [\[개념\] 파이썬 라이브러리](undefined-1.md)
 * [\[실습\] 파이썬 데이터 전처리(Pandas)](pandas.md)
 * [\[실습\] 파이썬 데이터 시각화 (Matplotlib, Seaborn, Folium)](matplotlib-seaborn-folium.md)
