@@ -2,9 +2,9 @@
 
 * [\[개념\] 파이썬 프로그래밍](README.md)
   * [Data Type](undefined/data-type.md)
-  * [If 조건문](undefined/if.md)
-  * [While, For 반복문](undefined/while-for.md)
-  * [함수](undefined/undefined.md)
+  * [Conditional Statment (If)](undefined/conditional-statment-if.md)
+  * [iteration Stement (While, For)](undefined/iteration-stement-while-for.md)
+  * [Function](undefined/function.md)
   * [I/O (Input/Output)](undefined/i-o-input-output.md)
   * [Class](undefined/class.md)
 * [\[개념\] 파이썬 라이브러리](undefined-1.md)
