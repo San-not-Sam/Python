@@ -1,12 +1,12 @@
 # Table of contents
 
 * [\[개념\] 파이썬 프로그래밍](README.md)
-  * [Page 1](undefined/page-1.md)
+  * [Copy Data Type](undefined/copy-data-type.md)
   * [Copy If 조건문](undefined/copy-if.md)
   * [Copy While, For 반복문](undefined/copy-while-for.md)
   * [Copy 함수](undefined/copy.md)
-  * [Copy of Page 1](undefined/copy-of-page-1.md)
-  * [Copy of Page 1](undefined/copy-of-page-1-1.md)
+  * [Copy I/O (Input/Output)](undefined/copy-i-o-input-output.md)
+  * [Copy Class](undefined/copy-class.md)
   * [Data Types](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/HvBkoEtU90dxLFmJbPHk/)
   * [If 조건문](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/Ro6cj42Y9Qsn075VFZSf/)
   * [While, For 반복문](https://app.gitbook.com/o/CNGVrK9H35CNfG7bwZDc/s/54hIQRYuORTOy06o0CBR/)
