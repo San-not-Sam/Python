@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# \[개념] 파이썬 라이브러리
+# 파이썬 라이브러리
 
 ## # Library
 
@@ -27,7 +27,7 @@ layout:
 * 내장되어 있지 않은 라이브러리는 `!pip install '라이브러리 이름'`으로 설치가 가능하다.
 * **\[용어 정리]**  모듈(Module) -   파이썬 확장자(.py)로 구성되어 실행이 가능한 하나의 파일로, '함수(function)', '클래스(class)', '변수(variable)'로 구성된다.&#x20;
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p><a href="https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385">https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p><a href="https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385">https://medium.com/@learnbay/python-libraries-for-data-analysis-and-modeling-in-data-science-c5c994208385</a></p></figcaption></figure>
 
 ## 1-1. Numpy
 
@@ -37,7 +37,7 @@ layout:
 * 다차원 배열을 쉽고 빠르게 계산하는  파이썬의 대표 라이브러리이다.&#x20;
 * 데이터 분석시, 주로  Pandas와 연계되어 사용된다.
 
-<figure><img src=".gitbook/assets/image (19).png" alt="" width="563"><figcaption><p><a href="https://medium.com/byte-sized-code/common-placeholders-in-numpy-arrays-1c3673718f2f">https://medium.com/byte-sized-code/common-placeholders-in-numpy-arrays-1c3673718f2f</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt="" width="563"><figcaption><p><a href="https://medium.com/byte-sized-code/common-placeholders-in-numpy-arrays-1c3673718f2f">https://medium.com/byte-sized-code/common-placeholders-in-numpy-arrays-1c3673718f2f</a></p></figcaption></figure>
 
 ### 2) 특징&#x20;
 
@@ -67,7 +67,7 @@ print(np.linalg.norm(arr)) # print L2 norm of vector (1, 2, 3)
 
 numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조와 동일한 개념이다.&#x20;
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Source : https://indianaiproduction.com/python-numpy-array/</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Source : https://indianaiproduction.com/python-numpy-array/</p></figcaption></figure>
 
 ### 2) List와의 공통점&#x20;
 
@@ -80,7 +80,7 @@ numpy에서 사용되는 기본적인 자료구조로, C언어의 array 구조�
 2. **\[homogeneous array]** 모든 원소의 데이터 타입이 동일해야 합니다.&#x20;
 3. 제공하는 데이터 타입이 다르다. 다중 리스트 구조와 달리, 넘파이 배열은 동일한 데이터 타입으로 구성된다.&#x20;
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. 수치와 관련된 데이터 타입이 대부분입니다.
 5. 원소의 크기(memory size)를 조절할 수 있으며, 크기에 따라 표현할 수 있는 수치 범위가 정해집니다.&#x20;
@@ -155,7 +155,7 @@ df.head()
 
 * pandas 라이브러리가 사용하는 기본 자료구조
 
-<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption><p>Source : https://www.geeksforgeeks.org/creating-a-pandas-dataframe/</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>Source : https://www.geeksforgeeks.org/creating-a-pandas-dataframe/</p></figcaption></figure>
 
 ### 2) 특징
 
@@ -182,7 +182,7 @@ df.head()
 
 <table><thead><tr><th width="151">데이터 유형</th><th width="300">예시 데이터 </th><th width="193">그래프 종류 </th></tr></thead><tbody><tr><td>연속형 데이터</td><td><ul><li><p>연속형 데이터 간 </p><ul><li>상관관계</li><li>변화량</li></ul></li></ul></td><td><ul><li>산점도(Scatter)</li><li>밀도(Density) </li></ul></td></tr><tr><td>범주형 데이터</td><td><ul><li><p>항목 또는 그룹 간 </p><ul><li>비교, 비율, 순위형 자료</li></ul></li></ul></td><td><p></p><ul><li>박스(Box)</li><li>바(Bar)</li><li>파이(Pie)</li><li>히트맵(Heat map)</li></ul></td></tr><tr><td>시계열 데이터</td><td><ul><li><p> 시간 단위 데이터의 경향성, 흐름 </p><ul><li>e.g. 날짜, 요일 등</li></ul></li></ul></td><td><p></p><ul><li>라인(Line)</li><li>리본(Ribbon)</li><li>VEB 그래프</li></ul></td></tr></tbody></table>
 
-<figure><img src=".gitbook/assets/image (16).png" alt="" width="563"><figcaption><p>Source: https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage- py</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (16).png" alt="" width="563"><figcaption><p>Source: https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage- py</p></figcaption></figure>
 
 ### 3) Seaborn 정의와 특징
 
@@ -250,7 +250,7 @@ df.head()
 
 * Exploratory Data Analysis의 준말로,  데이터에서 분석에 필요한 여러 통계량을 계산하고, 시각화로이를 확인하는 작업.
 
-<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption><p>Chapter.03_탐색적_데이터_분석-01. 탐색적 데이터 분석이란</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>Chapter.03_탐색적_데이터_분석-01. 탐색적 데이터 분석이란</p></figcaption></figure>
 
 ### 2) RECAP
 
