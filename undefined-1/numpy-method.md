@@ -14,14 +14,14 @@ layout:
 
 # Numpy method
 
-### Numpy
+## # Numpy
 
-#### 1. Numpy Array and Operation
+## 1. Numpy Array and Operation
 
 * numpy의 기본적인 사용법에 대해서 배워봅니다.
-* numpy에서 numpy.array를 만드는 여러가지 방법과 지원하는 연산자에 대해서 공부합니다.
+* numpy에서 numpy.array를 만드는 여러가지 방법과 지원하는 연산자에 대해서 공부합니다.&#x20;
 
-#### 1.1. Numpy Array creation
+### 1) Numpy Array creation
 
 ```python
 # numpy 라이브러리를 불러옵니다.
@@ -104,7 +104,7 @@ arr2.shape # (2, 2)
 (2, 2)
 ```
 
-#### 1.2. Reshaping array
+### 2) Reshaping array
 
 ```python
 # 3 x 3 행렬을 만들어봅시다. 
@@ -155,7 +155,7 @@ x.reshape(-1, )
 array([1, 2, 3, 4, 5, 6, 7, 8, 9])
 ```
 
-#### 1.3. Concatenation of arrays
+### 3) Concatenation of arrays
 
 ```python
 arr1 = np.array([[1, 2, 3]])
@@ -192,7 +192,7 @@ np.hstack([arr1, arr2])
 array([1, 2, 3, 4, 5, 6])
 ```
 
-### 1.4. Array Arithmetic (like vector) --> Universal Function
+### 4) Array Arithmetic (like vector) --> Universal Function
 
 ```python
 # v1 = (1, 2, 3), v2 = (4, 5, 6) 벡터 2개 생성하기.
@@ -256,7 +256,7 @@ v1 @ v2 # 1x4 + 2x5 + 3x6
 32
 ```
 
-#### 1.5. Broadcast and Universal Function
+### 5) Broadcast and Universal Function
 
 * 서로 크기가 다른 numpy array를 연산할 때, 자동으로 연산을 전파(broadcast)해주는 기능. 행렬곱 연산을 할 때 편리하다.
 
@@ -334,7 +334,7 @@ arr1
 array([3., 6., 9.])
 ```
 
-#### 1.6. Indexing
+### 6) Indexing
 
 * numpy array의 indexing은 python list의 indexing과 같다!
 
@@ -414,11 +414,13 @@ array([[1, 2],
        [5, 6]])
 ```
 
-### 2. Numpy Methods
+###
+
+## 2. Numpy Methods
 
 * numpy에서 사용되는 여러가지 함수들을 사용해봅시다.
 
-#### 2.1. Math Functions
+### 1) Math Functions&#x20;
 
 ```python
 # 표준정규분포에서 random sampling을 한 원소를 가지는 5x3 행렬을 만든다.
@@ -498,7 +500,7 @@ np.linalg.eig(mat)
         [ 0.56576746, -0.90937671]]))
 ```
 
-#### 2.2. Aggregation functions
+### 2) Aggregation functions
 
 ```python
 mat2 = np.random.rand(3, 2)
@@ -606,7 +608,7 @@ array([[0, 2],
        [2, 1]])
 ```
 
-### 3. Performance Check
+## 3. Performance Check
 
 * Universal Function 기능을 통해 반복문을 사용한 것보다 훨씬 빠른 성능을 냅니다.
 * 직접 실험을 통해 그 차이를 확인해보겠습니다.

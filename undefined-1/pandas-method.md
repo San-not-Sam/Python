@@ -175,7 +175,7 @@ df["X1"] + 2
 Name: X1, dtype: int64
 ```
 
-#### 2.2. Dataframe 기초 method
+## 2. Dataframe 기초 method&#x20;
 
 ```python
 # dataframe의 맨 위 다섯줄을 보여주는 head() --> 5줄 display
@@ -384,7 +384,7 @@ df.sort_values(by="X2", ascending=False)
 </div>
 ```
 
-#### 2.3. Fancy Indexing !
+## 3.  Fancy Indexing !
 
 * 데이터를 filtering <=> Search !
 * 전체 데이터에서 원하는 일부의 데이터를 찾아오는 방법 !
@@ -766,7 +766,7 @@ df.iloc[0:3, 0:2]
 </div>
 ```
 
-### 2.3. 여러 DataFrame 합치기
+## 4. 여러 DataFrame 합치기
 
 ```python
 df1 = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'], 
@@ -1050,7 +1050,7 @@ pd.concat([df1, df2, df3], axis=0).reset_index(drop=True)
 </div>
 ```
 
-### 2.4 DataFrame으로 데이터 불러오기
+## 5. DataFrame으로 데이터 불러오기
 
 Source : https://www.kaggle.com/c/titanic/data
 
@@ -1200,7 +1200,7 @@ titanic.loc[titanic.Age > 30, "Fare"].mean()
 42.35290983606555
 ```
 
-### 2.5. Pivot Table을 이용하여 데이터 살펴보기
+## 6. Pivot Table을 이용하여 데이터 살펴보기
 
 * pivot table이란 기존 테이블 구조를 특정 column을 기준으로 재구조화한 테이블을 말합니다.
 * 특정 column을 기준으로 pivot하기 때문에, 어떤 column에 어떤 연산을 하느냐에 따라서 만들어지는 결과가 바뀝니다.

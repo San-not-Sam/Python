@@ -12,12 +12,13 @@ layout:
     visible: true
 ---
 
-# Copy I/O (Input/Output)
+# I/O (Input/Output)
 
-## 1. STDIN / STDOUT (Standard IN, Standard OUT)
+## 1. STD<mark style="color:green;">IN</mark> / STD<mark style="color:red;">OUT</mark> (Standard <mark style="color:green;">IN</mark>, Standard <mark style="color:red;">OUT</mark>)
 
-* 파이썬은 input()을 통해서 stdin을 사용자로부터 입력받을 수 있다.
-* 파이썬은 print()를 통해서 stdout을 사용자에게 출력할 수 있다.
+### 1) 특징&#x20;
+
+* input()을 통해서 사용자로부터 stdin을 입력받고, print()를 통해서 사용자에게 stdout을 출력한다.
 
 ```python
 # a에 키보드로 입력받은 값을 할당하고 출력해본다.
@@ -28,14 +29,10 @@ a, type(a)
 ```
 10
 
-
-
-
-
 ('10', str)
 ```
 
-* 파이썬에서는 stdin은 무조건 문자열 타입으로 들어온다. 이를 type casting을 통해서 다른 데이터 타입으로 바꾸어 사용해야 한다.
+* stdin은 문자열 타입으로 들어오기 때문에, type casting을 통해 다른 데이터 타입으로 바꾸어야 한다.&#x20;
 
 ```python
 # 입력받는 값을 숫자라고 가정한 경우.
@@ -45,11 +42,6 @@ n, type(n)
 
 ```
 10
-
-
-
-
-
 (10, int)
 ```
 
@@ -62,17 +54,12 @@ n + 2
 
 ```
 10
-
-
-
-
-
 12
 ```
 
 * 입력이 문자열이기 때문에 fancy하게 input을 처리할 수 있는 방법이 있다.
 
-### Q. 만약에 stdin으로 여러 개의 숫자가 들어오는 경우, 입력의 format을 알고 있다고 가정했을 때, 이를 효과적으로 처리할 수 있을까?
+### 2) 여러 숫자를 효과적으로 처리하기&#x20;
 
 ```python
 # 이는 숫자를 2개로 가정한 경우
@@ -83,16 +70,11 @@ a + 2
 
 ```
 3, 5
-
-
-
-
-
 5
 ```
 
 ```python
-# 이와 같은 표현을 list comprehension이라고 한다.
+# list comprehension
 [x+2 for x in range(1, 4)]
 
 L = []
@@ -116,10 +98,6 @@ numbers
 ```
 3,4,5,6,7,877,9,1,12,3,5,6
 
-
-
-
-
 [3, 4, 5, 6, 7, 877, 9, 1, 12, 3, 5, 6]
 ```
 
@@ -130,11 +108,6 @@ numbers
 
 ```
 숫자 여러개를 입력하세요.(단 ','로 구분합니다.) 1,2,3,4,5,6,7,8
-
-
-
-
-
 [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
@@ -149,14 +122,14 @@ Mounted at /content/drive
 
 ## 2. File I/O
 
-* file I/O란 프로그램에서 파일을 저장하고 불러오는 모든 것들을 의미합니다.
-* file에는 txt, png, json, xlsx 등 여러가지 종류가 있습니다.
-* 그 중에서 가장 간단하게 사용할 수 있는 데이터는 txt 파일입니다.
+* \[정의] 프로그램에서 파일을 저장하고 불러오는 모든 것
+* \[종류] txt[^1], png, json, xlsx, etc.&#x20;
 
-> 텍스트 파일을 여는 방법에는 read(), readline(), readlines(), for문을 이용한 방법이 있다. 코드를 통해 각 방법의 차이를 알아보자.
+### 1) 텍스트 파일을 여는 네 가지 방법
+
+**(1) read()**
 
 ```python
-# f.read()를 통해 data 폴더안에 있는 test.txt를 read mode로 열어봅니다.
 file_path = "/content/drive/MyDrive/Colab Notebooks/data/test.txt"
 
 with open(file_path, 'r') as f:
@@ -169,8 +142,9 @@ data
 '아\n휴\n아이구\n아이쿠\n아이고\n어\n나\n우리\n저희\n따라\n의해\n을\n를\n에\n의\n가\n으로\n로\n에게\n뿐이다\n의거하여\n근거하여\n입각하여\n기준으로\n예하면\n예를 들면\n예를 들자면'
 ```
 
+**(2) readline()**
+
 ```python
-# f.readline()를 통해 data 폴더안에 있는 test.txt를 read mode로 열어봅니다.
 with open(file_path, 'r') as f:
   data = f.readline()
 
@@ -181,8 +155,9 @@ data
 '아\n'
 ```
 
+**(3) readlines()**
+
 ```python
-# f.readlines()를 통해 data 폴더안에 있는 test.txt를 read mode로 열어봅니다.
 with open(file_path, 'r') as f:
   data = f.readlines()
 
@@ -219,8 +194,9 @@ data
  '예를 들자면']
 ```
 
+**(4) for문**
+
 ```python
-# for문을 통해 data 폴더안에 있는 test.txt를 read mode로 열어서 출력해봅니다.
 L = []
 with open(file_path, 'r') as f:
   for line in f:
@@ -259,7 +235,7 @@ L
  '예를 들자면']
 ```
 
-### Q. test.txt를 열어서 한글자짜리를 다 지우고 다시 저장하고 싶다. 어떻게 해야할까?
+### 2) test.txt를 열어서 한글자짜리를 다 지우고 다시 저장하고자 한다.&#x20;
 
 ```python
 output = []
@@ -320,7 +296,7 @@ L
  '예를 들자면\n']
 ```
 
-## (OPTIONAL) pickle 라이브러리를 통해서 파이썬 object 자체를 저장하기
+## 3. Pickle 라이브러리를 통한 파이썬 object 자체 저장
 
 ```python
 output
@@ -380,3 +356,5 @@ output2
  '예를 들면',
  '예를 들자면']
 ```
+
+[^1]: 가장 간단하게 사용할 수 있는 데이터

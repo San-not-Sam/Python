@@ -14,10 +14,11 @@ layout:
 
 # matplotlib.pyplot
 
-* 데이터 분석의 꽃, 시각화 방법에서 가장 많이 사용되는 라이브러리인 matplotlib을 배워봅니다.
-* matplotlib은 파이썬에 다양한 그래프 작성방법을 제공합니다.
-* seaborn, folium 같은 다른 다양한 시각화 라이브러리들은 matplotlib을 dependency로 가지고 있거나, 영향을 많이 받았습니다.
-* matplotlib은 figure()를 기본적으로 그래프 그리는 객체로 사용하고, plot(), scatter() 함수를 이용하여 원하는 그래프를 그립니다.
+## 1. 정의&#x20;
+
+* 시각화 방법에서 가장 많이 사용되는 라이브러리로서, 파이썬에 다양한 그래프 작성방법을 제공한다.
+* &#x20;seaborn, folium 등의 시각화 라이브러리들에 영향을 주었다.&#x20;
+* figure()를 기본적으로 그래프 그리는 객체로 사용하고, plot(), scatter() 함수를 이용하여 원하는 그래프를 그립니다.
 
 ```python
 # matplotlib은 이렇게 불러오는 것이 관행입니다.

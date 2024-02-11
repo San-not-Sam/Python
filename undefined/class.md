@@ -12,10 +12,10 @@ layout:
     visible: true
 ---
 
-# Copy Class
+# Class
 
-* Python은 OOP 패러다임으로 구현된 언어입니다.
-* Python에서 Class를 직접 구현하면서 개념을 익혀봅시다.
+* ~~Python은 OOP 패러다임으로 구현된 언어입니다.~~
+* ~~Python에서 Class를 직접 구현하면서 개념을 익혀봅시다.~~
 
 ```python
 # Notebook 이라는 사물을 클래스로 정의합니다.
@@ -108,11 +108,9 @@ This Notebook is M1 Max model.
 This Notebook is Gram 17 model.
 ```
 
-## 클래스 상속 (Class inheritence)
+## 2. 클래스 상속 (Class inheritence)
 
-* Notebook들은 제조사마다 다른 모델이 있습니다.
-* 해당 모델들은 Notebook이지만, 모델마다 다른 특징을 가지고 있습니다.
-* 노트북의 개념을 그대로 이어받아, 모델마다 다른 개념을 Class로 구현해봅시다.
+* 노트북이 제조사마다 다른 모델과 특징을 가지듯, Class도 모델마다 개념이 다르다.&#x20;
 
 ```python
 # notebook class를 상속받아서 새로운 MacBook class를 정의
@@ -154,7 +152,7 @@ dell.print_model()
 This Notebook is XPS model.
 ```
 
-## Method Overriding
+## 3. Method Overriding
 
 ```python
 # 각 모델마다 다르게 정보를 출력해주는 is_UNIX 함수를 재정의합니다.

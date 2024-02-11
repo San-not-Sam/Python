@@ -12,41 +12,38 @@ layout:
     visible: true
 ---
 
-# Copy 함수
+# Function
 
-### Function이란?
+## 1. 정의&#x20;
 
-**수학적인 의미의 함수와 개념은 비슷하지만 역할이 다르다.**
+* 프로그래밍에서는 '기능'을 의미한다.&#x20;
+* 특정 기능을 구현한 코드 묶음이다.&#x20;
 
-* input이 들어와서 output이 정해진 규칙에 따라 나온다는 개념은 같지만, 프로그램에서의 하나의 함수는 **하나의 기능**을 나타낸다.
-* 정확하게 함수는 특정 기능을 구현한 **코드 묶음**이다.
-* def 함수이름(param1, param2, ... ): return
-* 함수를 쓰는 이유는 **재사용성** 때문이다.
+## 2. 특징&#x20;
 
-> 함수를 사용하는 가장 중요한 이유는 재사용성 때문이다. Reusability라고 하며, _**똑같은 구조의 코드가 반복되는 것을 피하기 위해 사용**_된다. 똑같은 구조의 코드는 보통 한 가지의 기능 단위로 묶이게 되며, 이 기능 단위를 코드로 묶어서 함수로 만든다.
+* \[재사용성] 동일조구의 코드 반복을피하기 위해 사용된다.&#x20;
 
-### Python Function Definition
+> def 함수명(parametre1, parametre2, ... ): return
 
 ```python
-# Function Definition
-def add(a, b):
-    # 입력받은 a, b를 더한 값을 돌려주는 함수.
+def add(a, b): # Function Definition
     result = a + b
     return result
 
-# Function Call
-add(3, 5)
+add(3, 5) # Function Call
 ```
 
 ```
 8
 ```
 
-* 정확한 용어 구분은 중요하지만, 보통은 parameter라고 총칭한다. 크게 중요하진 않다.
+* ~~정확한 용어 구분은 중요하지만, 보통은 parameter라고 총칭한다. 크게 중요하진 않다.~~
 
-**기억해야 할 것은, input --- (Function) ----> output 의 구조이며, 이 때 어떤 input parameter가 들어가서, 어떤 output parameter가 나오는지 주목해야한다.**
+~~**기억해야 할 것은, input --- (Function) ----> output 의 구조이며, 이 때 어떤 input parameter가 들어가서, 어떤 output parameter가 나오는지 주목해야한다.**~~
 
-**연습삼아, 사칙연산을 모두 함수로 만들어보자.**
+~~**연습삼아, 사칙연산을 모두 함수로 만들어보자.**~~
+
+### \[실습]
 
 ```python
 def sub(a, b):
@@ -57,9 +54,9 @@ def mul(a, b):
 
 def div(a, b):
   if b == 0:
-    print("Do not divided by zero.")
+    print("can't be divided by zero.")
     return
-  return a / b
+  return a / b 
 
 n1, n2 = 2, 0
 print(sub(n1, n2))
@@ -70,13 +67,13 @@ print(div(n1, n2))
 ```
 2
 0
-Do not divided by zero.
+can't be divided by zero.
 None
 ```
 
-#### 함수 정의의 다양한 형태를 연습해보자!
+## 3. 형태&#x20;
 
-**1. 가장 흔하게 사용되는 경우 -> 함수 parameter와 return이 모두 존재하는 경우.**
+### 1) parameter(O), return(O)&#x20;
 
 ```python
 def set_name(name):
@@ -90,14 +87,10 @@ name = set_name("Kim")
 ```
 Set name as KIM.
 
-
-
-
-
 'KIM'
 ```
 
-**2. 함수 parameter는 없고 return이 존재하는 경우.**
+### 2) parameter(X), return(O)&#x20;
 
 ```python
 def save_file():
@@ -109,7 +102,7 @@ def save_file():
   return save_flag
 ```
 
-**3. 함수 parameter는 있는데 return이 없는 경우.**
+### 3) parameter(O), return(X)&#x20;
 
 ```python
 def save_file(file_path):
@@ -117,7 +110,7 @@ def save_file(file_path):
     f.write(data)
 ```
 
-**4. 함수 parameter도 없고 return도 없는 경우.**
+### 4) parameter(X), return(X)&#x20;
 
 ```python
 def say_hi():
@@ -130,7 +123,7 @@ say_hi()
 Hi!
 ```
 
-**Q. 만약에 함수의 입력 parameter의 개수를 모를땐 어떻게 해야할까?**
+### 5) Input parameter의 개수를 모르는 경우
 
 ```python
 def add_many(*args): # *(asterisk)를 앞에 붙이는 것으로 여러개의 parameter를 받아서 tuple로 변환하여 준다.   
@@ -204,12 +197,12 @@ print("4. ", name2)
 4.  Lee
 ```
 
-#### Lambda 함수를 사용해보자!
-
-> Lambda Expression
+## 4. Lamda 함수&#x20;
 
 * 굉장히 간단한 함수가 있는 경우, 한 줄짜리 함수로 간편하게 사용할 수 있다.
-* 이런 함수를 Lambda 함수라고 하며, lambda 함수와 반복문을 통해 함수의 정의없이 다양한 프로그래밍이 가능하다.
+* 반복문과 함께 활용하여, 함수의 정의없이 다양한 프로그램을 구현케한다.&#x20;
+
+### \[실습]&#x20;
 
 ```python
 def add(a, b):
@@ -226,7 +219,9 @@ print(add(3, 5))
 8
 ```
 
-Q. 아래 리스트의 원소들을 원소들의 길이에 따라 정렬하고 싶은 경우엔 어떻게 해야할까?
+### \[실습]&#x20;
+
+* 리스트의 원소들을 길이에 따라 정렬하고자 할 때
 
 ```python
 def get_length(s):
@@ -241,19 +236,17 @@ strings
 ['kim', 'yoon', 'jeong', 'jessica']
 ```
 
-#### 파이썬에 이미 정의되어 있는 함수들을 사용해보자!
+### ★ 파이썬 내장 함수
 
 ```python
-import math
-# 수학 계산을 해봅시다.
+import math                # 수학 계산
 number = 3.14
-# 절대값, 올림, 내림
-print(abs(number))
-print(math.ceil(number))
-print(math.floor(number))
-# sin, cos
-print(math.sin(number))
-print(math.cos(number))
+
+print(abs(number))         # 절대값
+print(math.ceil(number))   # 올림
+print(math.floor(number))  # 내림
+print(math.sin(number))    # sin
+print(math.cos(number))    # cos
 ```
 
 ```
@@ -265,8 +258,7 @@ print(math.cos(number))
 ```
 
 ```python
-# 복권 숫자를 만들어봅시다.
-import random
+import random # 복권 숫자 생성
 
 random.randint(1, 45)
 random.choices(list(range(1, 46)), k=6)
@@ -277,8 +269,7 @@ random.choices(list(range(1, 46)), k=6)
 ```
 
 ```python
-# 다양한 사전들을 써봅시다.
-import collections
+import collections # 다양한 사전들
 from collections import defaultdict
 
 #D = collections.defaultdict(int)

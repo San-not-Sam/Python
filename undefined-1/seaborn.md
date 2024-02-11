@@ -14,6 +14,10 @@ layout:
 
 # Seaborn
 
+
+
+## 1)&#x20;
+
 * 엄청나게 화려한 시각화 기법들을 제공하며, 기본적으로 이쁩니다.
 
 > histplot, barplot, jointplot, lineplot, ...
@@ -77,7 +81,9 @@ data = data.dropna()
 </div>
 ```
 
-#### Histplot
+####
+
+## . Histplot
 
 * 가장 기본적으로 사용되는 히스토그램을 출력하는 plot.
 * 전체 데이터를 특정 구간별 정보를 확인할 때 사용합니다.
@@ -90,7 +96,7 @@ sns.histplot(data=data, x="body_mass_g", bins=15, hue="species", multiple="stack
 plt.show()
 ```
 
-#### Displot
+## . Displot
 
 * distribution들을 여러 subplot들로 나눠서 출력해주는 plot.
 * displot에 kind를 변경하는 것으로, histplot, kdeplot, ecdfplot 모두 출력이 가능합니다.
@@ -103,7 +109,7 @@ sns.displot(data=data, kind="kde", x="body_mass_g", hue="species", col="island")
 plt.show()
 ```
 
-#### Barplot
+## . Barplot
 
 * 어떤 데이터에 대한 값의 크기를 막대로 보여주는 plot. (a.k.a. 막대그래프)
 * 가로 / 세로 두 가지로 모두 출력 가능합니다.
@@ -116,7 +122,7 @@ sns.barplot(data=data, x="body_mass_g", y="species", hue="sex")
 plt.show()
 ```
 
-#### Countplot
+## . Barplot
 
 * 범주형 속성을 가지는 데이터들의 histogram을 보여주는 plot.
 * 종류별 count를 보여주는 방법입니다.
@@ -129,7 +135,7 @@ sns.countplot(data=data, x="sex", hue="species")
 plt.show()
 ```
 
-#### Boxplot
+## . Boxplot
 
 * 데이터의 각 종류별로 사분위 수(quantile)를 표시하는 plot.
 * 특정 데이터의 전체적인 분포를 확인하기 좋은 시각화 기법입니다.
@@ -144,7 +150,7 @@ plt.show()
 # What is boxplot?
 ```
 
-#### Violinplot
+## . Violinplot
 
 * 데이터에 대한 분포 자체를 보여주는 plot.
 * boxplot과 비슷하지만, 전체 분포에 대한 그림을 보여준다는 점에서 boxplot과 다릅니다.
@@ -157,7 +163,7 @@ sns.violinplot(data=data, y="species", x="bill_depth_mm", hue="sex")
 plt.show()
 ```
 
-#### Lineplot
+## . Lineplot
 
 * 특정 데이터를 x, y로 표시하여 관계를 확인할 수 있는 plot. (선 그래프)
 * 수치형 지표들 간의 경향을 파악할 때 많이 사용합니다.
@@ -169,7 +175,7 @@ sns.lineplot(data=data, x="body_mass_g", y="bill_depth_mm", ci=None)
 plt.show()
 ```
 
-#### Pointplot
+## . Pointplot
 
 * 특정 수치 데이터를 error bar와 함께 출력해주는 plot.
 * 수치 데이터를 다양한 각도에서 한 번에 바라보고 싶을 때 사용합니다.
@@ -182,7 +188,7 @@ sns.pointplot(data=data, x="island", y="bill_length_mm")
 plt.show()
 ```
 
-#### Scatterplot
+## . Scatterplot
 
 * lineplot과 비슷하게 x, y에 대한 전체적인 분포를 확인하는 plot.
 * lineplot은 경향성에 초점을 둔다면, scatterplot은 데이터 그 자체가 퍼져있는 모양에 중점을 둡니다.
@@ -194,7 +200,7 @@ sns.scatterplot(data=data, x="flipper_length_mm", y="body_mass_g", hue="sex")
 plt.show()
 ```
 
-#### Pairplot
+## . Pairplot
 
 * 주어진 데이터의 각 feature들 사이의 관계를 표시하는 Plot.
 * scatterplot, FacetGrid, kdeplot을 이용하여 feature간의 관계를 잘 보여줍니다.
@@ -214,13 +220,13 @@ plt.show()
 
 ```
 
-#### Heatmap
+## . Heatmap
 
 * 정사각형 그림에 데이터에 대한 정도 차이를 색 차이로 보여주는 plot.
 * 말 그대로 heatmap이기 때문에, 열화상카메라로 사물을 찍은 것처럼 정보의 차이를 보여줍니다.
 * pairplot과 비슷하게 feature간 관계를 시각화할 때 많이 사용합니다.
 
-**상관관계란?**
+## . **상관관계란?**
 
 * 어떤 X값의 변화에 따라 Y값의 선형적으로 변화하는지를 측정한 지표.
 * \[-1, 1]
